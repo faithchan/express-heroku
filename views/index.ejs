@@ -1,0 +1,37 @@
+<html>
+    
+    <body>
+        <h1>
+            Welcome to gitPub
+        </h1>
+
+        <ul>
+            <% for (let i = 0; i<drinks.length; i++) { %>
+                <% let name = drinks[i].name; %>
+                <% let capsName = name.charAt(0).toUpperCase() + name.slice(1)%>
+                <li>
+                    <a href="/drinks/<%=i%>"><%= capsName %></a>
+                    
+                </li>
+
+            <%} %>
+            <% for (let i = 0; i<food.length; i++) { %>
+                <% let name = food[i].name; %>
+                <% let capsName = name.charAt(0).toUpperCase() + name.slice(1)%>
+                <li>
+                    <a href="/food/<%=i%>"><%= capsName %></a>
+                    
+                </li>
+
+            <%} %>
+        </ul>
+
+    </body>
+
+    <style>
+      
+        body{background-color: lightslategray;}
+        h1{color:pink;}
+
+    </style>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    
+    <body>
+        <h1>
+            At foo bar
+        </h1>  
+        <% let capsName = drink.name.charAt(0).toUpperCase() + drink.name.slice(1)%>
+        <h2>Drink Name: <%= capsName %></h2>
+        <img src=<%= drink.image %>/>
+        <h3>Price: $<%= drink.price %></h3>
+        <a href="/drinks">Go back</a>
+       
+      
+    </body>
+<style>
+    body{background-color: lightslategrey;}
+    h1{color: pink;}
+    h2{color: white;}
+    img{width: 250px;}
+    h3{color:white}
+</style>
+ 
+</html>
